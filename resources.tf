@@ -3,4 +3,6 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-resource "aws_s3_bucket" "codepipeline-trigger-bucket" {}
+resource "aws_s3_bucket" "codepipeline-trigger-bucket" {
+  bucket = "codepipeline-trigger-bucket"
+}
